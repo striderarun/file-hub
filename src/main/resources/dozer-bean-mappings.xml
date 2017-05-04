@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<configuration>
+		<trim-strings>true</trim-strings>
+		<map-null>false</map-null>
+		<copy-by-references>
+			<copy-by-reference>org.joda.time.DateTime</copy-by-reference>
+			<copy-by-reference>org.joda.time.DateTimeZone</copy-by-reference>
+			<copy-by-reference>java.util.Locale</copy-by-reference>
+			<copy-by-reference>java.util.TimeZone</copy-by-reference>
+		</copy-by-references>
+	</configuration>
+	
+	<mapping map-id="accountMapper">
+		<class-a>com.arun.test.Account</class-a>
+		<class-b>com.arun.test.Account</class-b>
+		<field-exclude>
+            <a>accountKey</a>
+            <b>accountKey</b>
+        </field-exclude>
+        <field-exclude>
+            <a>sourceSystem</a>
+            <b>sourceSystem</b>
+        </field-exclude>
+	</mapping>
+
+
+</mappings>
