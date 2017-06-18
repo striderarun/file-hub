@@ -9,8 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import javax.annotation.Resource;
-
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
